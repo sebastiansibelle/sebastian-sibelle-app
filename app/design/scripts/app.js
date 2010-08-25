@@ -1,11 +1,14 @@
 // app specific javascript
 var app = {
+
+	url: null,
+
 	post: function(url, data, callback) {
-		rmit_at.ajax('post', url, data, callback);
+		app.ajax('post', url, data, callback);
 	},
 
 	get: function(url, data, callback) {
-		rmit_at.ajax('get', url, data, callback);
+		app.ajax('get', url, data, callback);
 	},
 
 	ajax: function(type, url, data, callback) {
@@ -32,10 +35,6 @@ var app = {
 
 	},
 
-	url: {},
-
 	init: function() {
-		$('.js_ajax_form').ajaxForm(rmit_at.get_ajax_form_options());
-		rmit_at.assessment.init();
 	}
 }
