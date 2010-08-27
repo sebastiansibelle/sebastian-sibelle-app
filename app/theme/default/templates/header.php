@@ -1,5 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
-"http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
 	<meta name="generator" content="Shuriken">
@@ -7,7 +6,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="version" content="$Id$">
 
-	<title>printitbiggar.com</title>
+	<title>Shuriken</title>
 	
 	<!-- css first -->
 	<?php ET::style('sw.resetstyle/reset'); ?>
@@ -18,33 +17,27 @@
 	<!--[if IE]><?php ET::style('sw.blueprint/ie'); ?><![endif]-->
 	<!--/blueprint-->
 
+	<!-- now theme styles -->
+	<?php ET::style('layout'); ?>
 	<?php ET::style('global'); ?>
 
-	<!-- IE Styles -->
+	<!-- theme specific IE Styles -->
 	<!--[if IE ]><?php ET::style('ie/generalfailure'); ?><![endif]-->
 	<!--[if lte IE 6]><?php ET::style('ie/6failshard'); ?><![endif]-->
 	<!--[if IE 7]><?php ET::style('ie/7fails'); ?><![endif]-->	
 	<!--[if gt IE 7]><?php ET::style('ie/futurefailure'); ?><![endif]-->
 
-	<!-- now js -->
+	<!-- Javascript -->
+	<!-- vendor / library js -->
 	<?php ET::script('jquery/jquery-1.4.2.min') ?>
-
 	<?php ET::script('jquery-ui/js/jquery-ui-1.8.4.min'); ?>
 
-		<!-- include uploadify -->
-		<?php ET::script('swfobject/swfobject'); ?>
-		<?php ET::script('uploadify/jquery.uploadify.v2.1.0.min'); ?>
-		<?php ET::style('uploadify/uploadify'); ?>
-		
-	<!-- rmit_at javascript -->
+	<!-- app javascript -->
 	<?php ET::script('app') ?>
+	<script type="text/javascript">var app = $.extend(true, app, <?php echo Response::get_javascript(); ?>);</script>
 
-	<script type="text/javascript">
-		var app = $.extend(true, app, <?php echo Response::get_javascript(); ?>);
-	</script>
-
-		<!-- finally, toys -->
-		<script src="<?php echo Theme::design() ?>/scripts/toys.js" type="text/javascript" charset="utf-8"></script>
+	<!-- finally, theme js -->
+	<?php ET::script('toys') ?>
 
 </head>
 
@@ -52,6 +45,11 @@
 
 	<div class="outer_wrap">
 		<div class="wrap">
-			<div class="squeeze">
+			<div class="inner_wrap">
 
-			<div class="spinner" id="spinner"></div>
+			<!-- ajax spinner -->
+			<div class="spinner js_spinner"></div>
+
+			<div class="header">
+				<h1 class="logo"><a href="<?php EF::dest('home') ?>">I'm a logo</a></h1>
+			</div><!--header-->

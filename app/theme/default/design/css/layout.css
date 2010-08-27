@@ -18,8 +18,14 @@ body{font-family:'Lucida Grande', Helvetica, Arial, sans-serif;}
 /* main menu */
 .m1{}
 
+.outer_wrap {margin: 0 auto; width: 960px;}
+.wrap{}
+
 /* content */
 .content{}
 
 /* footer */
 .footer{}
+
+.js_hidden { display: none; }
+.js_reallyhidden { display: none !important; }
