@@ -10,12 +10,12 @@
 	<title>printitbiggar.com</title>
 	
 	<!-- css first -->
-	<?php ET::style('library/ericMyerReset'); ?>
+	<?php ET::style('sw.resetstyle/reset'); ?>
 
 	<!--blueprint-->
-	<?php ET::style('blueprint/screen'); ?>
+	<?php ET::style('sw.blueprint/screen'); ?>
 	<link rel="stylesheet" href="<?php echo Theme::design(Theme::SHURIKEN) ?>/lib/blueprint/print.css" type="text/css" media="print"> 
-	<!--[if IE]><?php ET::style('blueprint/ie'); ?><![endif]-->
+	<!--[if IE]><?php ET::style('sw.blueprint/ie'); ?><![endif]-->
 	<!--/blueprint-->
 
 	<link rel="stylesheet" type="text/css" href="<?php echo Theme::design() ?>/css/global.css" media="screen, projection">		
@@ -27,16 +27,13 @@
 	<!--[if gt IE 7]><?php ET::style('ie/futurefailure'); ?><![endif]-->
 
 	<!-- now js -->
-	<?php ET::script('jquery/jquery.min') ?>
-	<?php ET::script('jquery/jquery.form') ?>
+	<?php ET::script('jquery/jquery-1.4.2.min') ?>
 
-	<?php ET::script('jquery-ui/jquery-ui.min'); ?>
-	<?php ET::script('jquery.quicksearch/jquery.quicksearch'); ?>
-	<?php ET::script('jquery.hotkeys/jquery.hotkeys'); ?>
+	<?php ET::script('jquery-ui/js/jquery-ui-1.8.4.min'); ?>
 
 		<!-- include uploadify -->
 		<?php ET::script('swfobject/swfobject'); ?>
-		<?php ET::script('uploadify/jquery.uploadify.min'); ?>
+		<?php ET::script('uploadify/jquery.uploadify.v2.1.0.min'); ?>
 		<?php ET::style('uploadify/uploadify'); ?>
 		
 	<!-- rmit_at javascript -->
