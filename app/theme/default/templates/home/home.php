@@ -6,7 +6,7 @@
 		<a href="<?php EF::dest('home') ?>">I'm a logo</a>
 	</h1>
 
-<!--header--></div>
+</div><!--header-->
 
 <div class="content">
 
