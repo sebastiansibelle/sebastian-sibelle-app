@@ -14,11 +14,11 @@
 
 	<!--blueprint-->
 	<?php ET::style('sw.blueprint/screen'); ?>
-	<link rel="stylesheet" href="<?php echo Theme::design(Theme::SHURIKEN) ?>/lib/blueprint/print.css" type="text/css" media="print"> 
+	<link rel="stylesheet" href="<?php echo Theme::design(Theme::SHURIKEN) ?>/vendor/sw.blueprint/print.css" type="text/css" media="print"> 
 	<!--[if IE]><?php ET::style('sw.blueprint/ie'); ?><![endif]-->
 	<!--/blueprint-->
 
-	<link rel="stylesheet" type="text/css" href="<?php echo Theme::design() ?>/css/global.css" media="screen, projection">		
+	<?php ET::style('global'); ?>
 
 	<!-- IE Styles -->
 	<!--[if IE ]><?php ET::style('ie/generalfailure'); ?><![endif]-->

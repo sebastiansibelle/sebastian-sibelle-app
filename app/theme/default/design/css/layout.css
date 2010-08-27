@@ -1,0 +1,25 @@
+/* Will Dayble's a pretty cool guy. Eh designs the whole css and doesn't afraid of anything */
+
+html, body{min-height: 100%;}
+
+/* --------------------------- z-index'd, together, for evar! */
+body{z-index: 100;}
+.content{z-index: 500;}
+
+/* --------------------------- some overal style stuuuuff! */
+html, body{height: 100%;}
+h2, h3, h4, blockquote{font-family: Georgia, Times, sans-serif;}
+body{font-family:'Lucida Grande', Helvetica, Arial, sans-serif;}
+
+
+/* header */
+.header{}
+
+/* main menu */
+.m1{}
+
+/* content */
+.content{}
+
+/* footer */
+.footer{}
