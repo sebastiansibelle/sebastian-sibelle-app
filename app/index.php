@@ -7,6 +7,6 @@ if ( !defined( 'FILE_ROOT' ) )
 	define( 'FILE_ROOT', realpath(dirname( __FILE__ ) . '/../') );
 }
 
-include( FILE_ROOT . '/app/shuriken/classes/bootstrap.php' );
+include( FILE_ROOT . '/app/shuriken/classes/shurikenbootstrap.php' );
 
 Bootstrap::go();

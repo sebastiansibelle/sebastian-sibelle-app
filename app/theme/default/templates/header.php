@@ -43,13 +43,43 @@
 
 <body class='<?php ET::bc_str(); ?>'>
 
-	<div class="outer_wrap">
-		<div class="wrap">
-			<div class="inner_wrap">
+<div class="header">
+	<div class="container">
+		<h1 class="logo" id="logo"><a href="<?php EF::dest('home') ?>">I'm a logo</a></h1>
+		<div class="user user_logged_in">
+			<h4><a href="#"><?php EF::t(Prototype::random_name()) ?></a></h4>
+			<p>
+				<a href="<?php EF::dest('login') ?>">Log out &raquo;</a>
+				<a href="<?php EF::dest('user') ?>edit">Control panel <span>|</span></a>
+			</p>
+		</div><!--user-->
+	</div>
+</div><!--header-->
 
-			<!-- ajax spinner -->
-			<div class="spinner js_spinner"></div>
 
-			<div class="header">
-				<h1 class="logo"><a href="<?php EF::dest('home') ?>">I'm a logo</a></h1>
-			</div><!--header-->
+<?php if (Session::has_messages() || Session::has_errors()): ?>
+<div class="session_messages js_session_messages">
+	<div class="bottom"></div>
+	<a class="js_close_session_messages x"><span>Close messages</span></a>
+	<?php if (Session::has_messages()): ?>
+		<div class="messages">
+			<?php foreach(Session::get_messages() as $msg): ?>
+				<div class="message"><?php EF::t($msg) ?></div>
+			<?php endforeach; ?>
+		</div>
+	<?php endif; ?>
+	<?php if (Session::has_errors()):?>
+		<div class="errors">
+			<?php foreach(Session::get_errors() as $msg): ?>
+				<div class="error"><?php EF::t($msg) ?></div>
+			<?php endforeach; ?>
+		</div>
+	<?php endif; ?>
+</div>
+<?php endif; ?>
+
+
+<div class="outer_wrap">
+	<div class="wrap">
+		<div class="inner_wrap">
+
