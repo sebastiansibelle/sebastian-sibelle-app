@@ -9,12 +9,12 @@
 	<title>Shuriken</title>
 	
 	<!-- css first -->
-	<?php ET::style('sw.resetstyle/reset'); ?>
+	<?php ET::style('resetstyle.sw/reset'); ?>
 
 	<!--blueprint-->
-	<?php ET::style('sw.blueprint/screen'); ?>
-	<link rel="stylesheet" href="<?php echo Theme::design(Theme::SHURIKEN) ?>/vendor/sw.blueprint/print.css" type="text/css" media="print"> 
-	<!--[if IE]><?php ET::style('sw.blueprint/ie'); ?><![endif]-->
+	<?php ET::style('blueprint.sw/screen'); ?>
+	<link rel="stylesheet" href="<?php ET::design(Theme::SHURIKEN) ?>/vendor/blueprint.sw/print.css" type="text/css" media="print"> 
+	<!--[if IE]><?php ET::style('blueprint.sw/ie'); ?><![endif]-->
 	<!--/blueprint-->
 
 	<!-- now theme styles -->
@@ -34,7 +34,7 @@
 
 	<!-- app javascript -->
 	<?php ET::script('app') ?>
-	<script type="text/javascript">var app = $.extend(true, app, <?php echo Response::get_javascript(); ?>);</script>
+	<script type="text/javascript">var app = $.extend(true, app, <?php EF::raw(Response::get_javascript()); ?>);</script>
 
 	<!-- finally, theme js -->
 	<?php ET::script('toys') ?>
