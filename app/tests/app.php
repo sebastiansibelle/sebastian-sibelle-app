@@ -1,4 +1,8 @@
 <?php
+// To enable tests, set 
+// Config::set('enable_tests', TRUE);
+// in the config.php
+
 class AppTests extends TestSuite 
 {
 	function __construct() {
