@@ -1,5 +1,5 @@
 <?php
-class MasonTests extends TestSuite 
+class AppTests extends TestSuite 
 {
 	function __construct() {
 		parent::__construct();
