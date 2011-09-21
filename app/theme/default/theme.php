@@ -9,7 +9,7 @@ class DefaultAppTheme extends AppTheme
 		switch($str) {
 			// put in overrides here.
 			case 'Your session has expired.': return "You session has just expired.";
-			default: return parent::theme_str($str);
+			default: return parent::str($str);
 		}
 	}
 }
