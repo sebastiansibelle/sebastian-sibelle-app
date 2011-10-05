@@ -7,17 +7,12 @@
 	<meta name="generator" content="Shuriken">
 	<meta name="author" content="Squareweave Pty Ltd, $Id$">
 	
-	<link rel="shortcut icon" type="image/x-icon" href="assets/ico/favicon.ico">	
+	<link rel="shortcut icon" type="image/x-icon" href="<?php ET::image('ico/favicon.ico'); ?>">	
 	
-	<link rel="apple-touch-icon" href="assets/ico/bootstrap-apple-57x57.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="assets/ico/bootstrap-apple-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="assets/ico/bootstrap-apple-114x114.png">	
+	<link rel="apple-touch-icon" href="<?php ET::image('ico/apple_57x57.png'); ?>">
+	<link rel="apple-touch-icon" sizes="72x72" href="<?php ET::image('ico/apple_72x72.png'); ?>">
+	<link rel="apple-touch-icon" sizes="114x114" href="<?php ET::image('ico/apple_114x114.png'); ?>">	
 
-  <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
-  <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->	
-	
 	<!-- include bootstrap first -->
 	<?php ET::less('bootstrap/lib/bootstrap') ?>
 
@@ -30,7 +25,10 @@
 	<!--[if IE 7]><?php ET::style('ie/7fails'); ?><![endif]-->	
 	<!--[if gt IE 7]><?php ET::style('ie/futurefailure'); ?><![endif]-->
 
-
+  <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->	
 
 	<!-- less script -->
 	<?php ET::script('less.js/dist/less-1.1.4') ?>
