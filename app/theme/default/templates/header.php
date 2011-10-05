@@ -1,31 +1,39 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <title>Project Name</title>
+	<meta name="application-name" content="Project Name">
 	<meta name="generator" content="Shuriken">
-	<meta name="Author" content="Squareweave Pty Ltd">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta name="version" content="$Id$">
-
-	<title>Shuriken</title>
+	<meta name="author" content="Squareweave Pty Ltd, $Id$">
 	
-	<!-- css first -->
-	<?php ET::style('resetstyle.sw/reset'); ?>
+	<link rel="shortcut icon" type="image/x-icon" href="assets/ico/favicon.ico">	
+	
+	<link rel="apple-touch-icon" href="assets/ico/bootstrap-apple-57x57.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/ico/bootstrap-apple-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/ico/bootstrap-apple-114x114.png">	
 
-	<!--blueprint-->
-	<?php ET::style('blueprint.sw/screen'); ?>
-	<link rel="stylesheet" href="<?php ET::design(Theme::SHURIKEN) ?>/vendor/blueprint.sw/print.css" type="text/css" media="print"> 
-	<!--[if IE]><?php ET::style('blueprint.sw/ie'); ?><![endif]-->
-	<!--/blueprint-->
+  <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->	
+	
+	<!-- include bootstrap first -->
+	<?php ET::less('bootstrap/lib/bootstrap') ?>
 
-	<!-- now theme styles -->
-	<?php ET::style('layout'); ?>
-	<?php ET::style('global'); ?>
+	<!-- our styles -->
+	<?php ET::less('global'); ?>
 
 	<!-- theme specific IE Styles -->
 	<!--[if IE ]><?php ET::style('ie/generalfailure'); ?><![endif]-->
 	<!--[if lte IE 6]><?php ET::style('ie/6failshard'); ?><![endif]-->
 	<!--[if IE 7]><?php ET::style('ie/7fails'); ?><![endif]-->	
 	<!--[if gt IE 7]><?php ET::style('ie/futurefailure'); ?><![endif]-->
+
+
+
+	<!-- less script -->
+	<?php ET::script('less.js/dist/less-1.1.4') ?>
 
 	<!-- Javascript -->
 	<!-- vendor / library js -->
@@ -43,43 +51,28 @@
 
 <body class='<?php ET::bc_str(); ?>'>
 
-<div class="header">
-	<div class="container">
-		<h1 class="logo" id="logo"><a href="<?php EF::dest('home') ?>">I'm a logo</a></h1>
-		<div class="user user_logged_in">
-			<h4><a href="#"><?php EF::t(Prototype::random_name()) ?></a></h4>
-			<p>
-				<a href="<?php EF::dest('login') ?>">Log out &raquo;</a>
-				<a href="<?php EF::dest('user') ?>edit">Control panel <span>|</span></a>
-			</p>
-		</div><!--user-->
-	</div>
-</div><!--header-->
 
+<!--
+Here are some standard header elements
+
+
+<a href="<?php EF::dest('home') ?>">Home</a>
+<a href="<?php EF::dest('login') ?>">Log out &raquo;</a>
 
 <?php if (Session::has_messages() || Session::has_errors()): ?>
-<div class="session_messages js_session_messages">
-	<div class="bottom"></div>
-	<a class="js_close_session_messages x"><span>Close messages</span></a>
+
 	<?php if (Session::has_messages()): ?>
-		<div class="messages">
-			<?php foreach(Session::get_messages() as $msg): ?>
-				<div class="message"><?php EF::t($msg) ?></div>
-			<?php endforeach; ?>
-		</div>
+		<?php foreach(Session::get_messages() as $msg): ?>
+			<?php EF::raw($msg) ?>
+		<?php endforeach; ?>
+
 	<?php endif; ?>
 	<?php if (Session::has_errors()):?>
-		<div class="errors">
 			<?php foreach(Session::get_errors() as $msg): ?>
-				<div class="error"><?php EF::t($msg) ?></div>
+				<?php EF::raw($msg) ?>
 			<?php endforeach; ?>
-		</div>
 	<?php endif; ?>
-</div>
+
 <?php endif; ?>
 
-
-<div class="outer_wrap">
-	<div class="wrap">
-		<div class="inner_wrap">
-
+-->
