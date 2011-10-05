@@ -51,8 +51,7 @@
 
 
 <!--
-Here are some standard header elements
-
+Here are some standard header elements guiz. LOL.
 
 <a href="<?php EF::dest('home') ?>">Home</a>
 <a href="<?php EF::dest('login') ?>">Log out &raquo;</a>
