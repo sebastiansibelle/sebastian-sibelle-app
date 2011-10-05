@@ -5,6 +5,7 @@
 .tempnav{position: fixed; top:0; left: 0; width: 100%;  background: #000}
 .tempnav a{float: left; display: block; padding: 10px; color: #fff;}
 .tempnav a:first-child{padding-left: 0;}
+.tempnav .twit{color: #ccc; float: right;}
 </style>
 
 <div class="tempnav">
@@ -14,6 +15,7 @@
 	    <a href="#tables">Tables</a>
 	    <a href="#forms">Forms</a>
 	    <a href="#alerts">Alerts</a>
+	    <a href="http://twitter.github.com/bootstrap" target="_blank" class="twit">twitter.github.com/bootstrap &raquo;</a>
 	</div>
 </div>
 
