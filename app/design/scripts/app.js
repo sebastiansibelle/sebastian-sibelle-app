@@ -1,5 +1,5 @@
 // app specific javascript
-var app = {
+$.extend(true, app, {
 
 	url: null,
 
@@ -37,4 +37,4 @@ var app = {
 
 	init: function() {
 	}
-}
+});

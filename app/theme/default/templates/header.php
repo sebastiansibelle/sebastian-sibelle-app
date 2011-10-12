@@ -3,11 +3,11 @@
  <head>
   <meta charset="utf-8">
   <title>Project Name</title>
-	<meta name="application-name" content="Project Name">
+	<meta name="application-name" content="<?php EF::v(Bootstrap::APP_NAME) ?>">
 	<meta name="generator" content="Shuriken">
 	<meta name="author" content="Squareweave Pty Ltd, $Id$">
 	
-	<link rel="shortcut icon" type="image/x-icon" href="<?php ET::image('ico/favicon.ico'); ?>">	
+	<link rel="shortcut icon" type="image/x-icon" href="<?php ET::image('ico/favicon.ico'); ?>">
 	
 	<link rel="apple-touch-icon" href="<?php ET::image('ico/apple_57x57.png'); ?>">
 	<link rel="apple-touch-icon" sizes="72x72" href="<?php ET::image('ico/apple_72x72.png'); ?>">
@@ -17,7 +17,8 @@
 	<?php ET::less('bootstrap/lib/bootstrap') ?>
 
 	<!-- our styles -->
-	<?php ET::less('global'); ?>
+	<?php ET::minstyle('global'); ?>
+	<?php ET::minstyle(); ?>
 
 	<!-- theme specific IE Styles -->
 	<!--[if IE ]><?php ET::style('ie/generalfailure'); ?><![endif]-->
@@ -39,16 +40,17 @@
 	<?php ET::script('jquery-ui/js/jquery-ui-1.8.4.min'); ?>
 
 	<!-- app javascript -->
-	<?php ET::script('app') ?>
-	<script type="text/javascript">var app = $.extend(true, app, <?php EF::raw(Response::get_javascript()); ?>);</script>
+	<?php ET::minscript('shuriken') ?>
+	<?php ET::minscript('app') ?>
 
 	<!-- finally, theme js -->
-	<?php ET::script('toys') ?>
+	<?php ET::minscript('toys') ?>
+	<?php ET::minscript() ?>
+	<script type="text/javascript">$.extend(true, app, <?php EF::raw(Response::get_javascript()); ?>);</script>
 
 </head>
 
 <body class='<?php ET::bc_str(); ?>'>
-
 
 <!--
 Here are some standard header elements guiz. LOL.
