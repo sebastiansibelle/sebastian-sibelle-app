@@ -9,6 +9,8 @@ class Bootstrap extends ShurikenBootstrap
 	{
 		// Config::set('typekit_id', 'some typekit id');
 		// Config::set('ga_id', 'some_ga_id');
+		
+		return parent::initialise_response();
 	}
 
 	public static function pass_to_module()
