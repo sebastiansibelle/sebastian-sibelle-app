@@ -15,7 +15,7 @@ repos_response = `curl -s --user #{user}:'#{password}' https://api.bitbucket.org
 begin
   repos = JSON.parse(repos_response)
 rescue
-  abort "Password is incorrect"
+  abort "Password is incorrect."
 end
 
 puts "OK!"
