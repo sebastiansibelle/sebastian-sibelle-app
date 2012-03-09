@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+require File.expand_path(File.dirname(__FILE__) + '/new_repo')
+require File.expand_path(File.dirname(__FILE__) + '/init_submodules')
