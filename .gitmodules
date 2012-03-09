@@ -1,3 +1,6 @@
 [submodule "htdocs/app/shuriken"]
 	path = htdocs/app/shuriken
 	url = git@bitbucket.org:Squareweave/shuriken.git
+[submodule "dox"]
+	path = dox
+	url = git@bitbucket.org:Squareweave/standard-documentation.git
