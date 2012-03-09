@@ -1,3 +1,0 @@
-[submodule "app/shuriken"]
-	path = app/shuriken
-	url = git@bitbucket.org:Squareweave/shuriken.git
