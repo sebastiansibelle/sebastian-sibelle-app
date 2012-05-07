@@ -3,7 +3,14 @@
 
 jQuery(document).ready(function($) {
   
-  // Code using $ as usual goes here, like:
-  // $('.my_class').fadeIn();
   
+  /* 
+  Love is from here:
+  http://twitter.github.com/bootstrap/javascript.html
+  */
+  
+  $('.dropdown-toggle').dropdown();
+  $('#navbar').scrollspy();
+  $(".alert").alert();
+  $('.js_tooltip').tooltip({}); /* <a href="#" class="js_tooltip" rel="tooltip" data-original-title="some text in the tip"> */
 });
