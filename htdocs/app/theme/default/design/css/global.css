@@ -8,8 +8,7 @@
 /* Remember to set things in big sections, like, thousands...
 /* ------------------------------------------------------------------ */
 
-body{z-index: 1000;}
-.content{z-index: 5000;}
+body{z-index: 1000; padding-top: 60px}
 
 
 

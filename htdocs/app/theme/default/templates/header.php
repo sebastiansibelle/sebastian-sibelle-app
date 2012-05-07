@@ -14,7 +14,7 @@
 	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php ET::image('ico/apple-touch-icon-72-precomposed.png'); ?>">	
 	<link rel="apple-touch-icon-precomposed" href="<?php ET::image('ico/apple-touch-icon-57-precomposed.png'); ?>">	
 
-	<?php ET::less('bootstrap/lib/bootstrap') ?>
+	<?php ET::less('bootstrap/less/bootstrap') ?>
 	<?php ET::style('global'); ?>
 	<?php ET::style('responsive'); ?>
 
@@ -33,7 +33,6 @@
 	<?php ET::minscript('jquery/jquery-1.7.1.min') ?>
 	<?php ET::minscript('jquery.scrollto/jquery.scrollto.min') ?>
 	<?php ET::minscript('jquery.localscroll.min') ?>	
-	
 
   <?php ET::minscript('bootstrap/js/bootstrap-transition') ?>
   <?php ET::minscript('bootstrap/js/bootstrap-alert') ?>
@@ -62,55 +61,55 @@
 <body class='<?php ET::bc_str(); ?>'>
 
 
-<div class="navbar">
-    <div class="navbar-inner">
-      <div class="container">
-        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </a>
-        <a class="brand" href="#">Project name</a>
-        <div class="nav-collapse">
-          <ul class="nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li class="nav-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>
-          </ul>
-          <form class="navbar-search pull-left" action="">
-            <input type="text" class="search-query span2" placeholder="Search">
-          </form>
-          <ul class="nav pull-right">
-            <li><a href="#">Link</a></li>
-            <li class="divider-vertical"></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div><!-- /.nav-collapse -->
-      </div>
-    </div><!-- /navbar-inner -->
-  </div><!-- /navbar -->
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a class="brand" href="#">Project name</a>
+      <div class="nav-collapse">
+        <ul class="nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li class="nav-header">Nav header</li>
+              <li><a href="#">Separated link</a></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="navbar-search pull-left" action="">
+          <input type="text" class="search-query span2" placeholder="Search">
+        </form>
+        <ul class="nav pull-right">
+          <li><a href="#">Link</a></li>
+          <li class="divider-vertical"></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.nav-collapse -->
+    </div>
+  </div><!-- /navbar-inner -->
+</div><!-- /navbar -->
 
 <!--
 Here are some standard header elements guiz. LOL.
