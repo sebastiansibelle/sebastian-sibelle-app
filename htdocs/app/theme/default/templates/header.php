@@ -14,11 +14,6 @@
 	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php ET::image('ico/apple-touch-icon-72-precomposed.png'); ?>">	
 	<link rel="apple-touch-icon-precomposed" href="<?php ET::image('ico/apple-touch-icon-57-precomposed.png'); ?>">	
 
-	<?php ET::less('bootstrap/less/bootstrap') ?>
-	<?php ET::style('global'); ?>
-	<?php ET::style('responsive'); ?>
-
-
 	<!--[if IE ]><?php ET::style('ie'); ?><![endif]-->
   <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
   <!--[if lt IE 9]>
@@ -27,25 +22,22 @@
 
 	<!-- less script -->
 	<?php ET::minscript('less.js/dist/less-1.3.0.min') ?>
+	
+	<?php ET::minless('bootstrap/less/bootstrap'); ?>
+	<?php ET::minless('bootstrap/less/responsive'); ?>
+	<?php ET::minless('global'); ?>
+	<?php ET::minless('fontello/fontello'); ?>
+	<?php ET::minless('responsive'); ?>
+	<?php ET::minless(); ?>
 
 	<!-- Javascript -->
 	<!-- vendor / library js -->
 	<?php ET::minscript('jquery/jquery-1.7.1.min') ?>
 	<?php ET::minscript('jquery.scrollto/jquery.scrollto.min') ?>
-	<?php ET::minscript('jquery.localscroll.min') ?>	
+	<?php ET::minscript('jquery.localscroll.min') ?>
 
   <?php ET::minscript('bootstrap/js/bootstrap-transition') ?>
-  <?php ET::minscript('bootstrap/js/bootstrap-alert') ?>
-  <?php ET::minscript('bootstrap/js/bootstrap-modal') ?>
-  <?php ET::minscript('bootstrap/js/bootstrap-dropdown') ?>
-  <?php ET::minscript('bootstrap/js/bootstrap-scrollspy') ?>
-  <?php ET::minscript('bootstrap/js/bootstrap-tab') ?>
   <?php ET::minscript('bootstrap/js/bootstrap-tooltip') ?>
-  <?php ET::minscript('bootstrap/js/bootstrap-popover') ?>
-  <?php ET::minscript('bootstrap/js/bootstrap-button') ?>
-  <?php ET::minscript('bootstrap/js/bootstrap-collapse') ?>
-  <?php ET::minscript('bootstrap/js/bootstrap-carousel') ?>
-  <?php ET::minscript('bootstrap/js/bootstrap-typeahead') ?>	
 
 	<!-- app javascript -->
 	<?php ET::minscript('shuriken') ?>
