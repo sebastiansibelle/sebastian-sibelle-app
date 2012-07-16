@@ -3,7 +3,6 @@
 
 jQuery(document).ready(function($) {
   
-  
   /* 
   Love is from here:
   http://twitter.github.com/bootstrap/javascript.html
@@ -13,4 +12,6 @@ jQuery(document).ready(function($) {
   $('#navbar').scrollspy();
   $(".alert").alert();
   $('.js_tooltip').tooltip({}); /* <a href="#" class="js_tooltip" rel="tooltip" data-original-title="some text in the tip"> */
+  
+ 
 });

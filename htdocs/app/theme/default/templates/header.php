@@ -9,44 +9,21 @@
 	<meta name="author" content="Squareweave Pty Ltd, $Id$">
 	
 	<link rel="shortcut icon" href="<?php ET::image('ico/favicon.ico'); ?>">	
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php ET::image('ico/apple-touch-icon-144-precomposed.png'); ?>">	
-	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php ET::image('ico/apple-touch-icon-114-precomposed.png'); ?>">	
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php ET::image('ico/apple-touch-icon-72-precomposed.png'); ?>">	
-	<link rel="apple-touch-icon-precomposed" href="<?php ET::image('ico/apple-touch-icon-57-precomposed.png'); ?>">	
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php ET::image('ico/apple_114x114.png'); ?>">	
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php ET::image('ico/apple_72x72.png'); ?>">	
+	<link rel="apple-touch-icon-precomposed" href="<?php ET::image('ico/apple_57x57.png'); ?>">	
 
-	<!--[if IE ]><?php ET::style('ie'); ?><![endif]-->
-  <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
-  <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->	
-
-	<!-- less script -->
-	<?php ET::minscript('less.js/dist/less-1.3.0.min') ?>
-	
 	<?php ET::minless('bootstrap/less/bootstrap'); ?>
 	<?php ET::minless('bootstrap/less/responsive'); ?>
 	<?php ET::minless('global'); ?>
-	<?php ET::minless('fontello/fontello'); ?>
 	<?php ET::minless('responsive'); ?>
 	<?php ET::minless(); ?>
 
-	<!-- Javascript -->
-	<!-- vendor / library js -->
-	<?php ET::minscript('jquery/jquery-1.7.1.min') ?>
-	<?php ET::minscript('jquery.scrollto/jquery.scrollto.min') ?>
-	<?php ET::minscript('jquery.localscroll.min') ?>
+	<?php ET::minstyle('fontello/fontello'); ?>
+	<?php ET::minstyle(); ?>	
 
-  <?php ET::minscript('bootstrap/js/bootstrap-transition') ?>
-  <?php ET::minscript('bootstrap/js/bootstrap-tooltip') ?>
-
-	<!-- app javascript -->
-	<?php ET::minscript('shuriken') ?>
-	<?php ET::minscript('app') ?>
-
-	<!-- finally, theme js -->
-	<?php ET::minscript('toys') ?>
-	<?php ET::minscript() ?>
-	<script type="text/javascript">$.extend(true, app, <?php EF::raw(Response::get_javascript()); ?>);</script>
+	<!--[if IE ]><?php ET::style('ie'); ?><![endif]-->
+  <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->	
 
 </head>
 
@@ -64,7 +41,7 @@
       <a class="brand" href="#">Project name</a>
       <div class="nav-collapse">
         <ul class="nav">
-          <li class="active"><a href="#">Home</a></li>
+          <li class="active"><a href="#"><i class="icon icon-home"></i> Home</a></li>
           <li><a href="#">Link</a></li>
           <li><a href="#">Link</a></li>
           <li><a href="#">Link</a></li>
