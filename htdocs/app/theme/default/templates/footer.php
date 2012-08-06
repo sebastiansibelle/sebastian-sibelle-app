@@ -22,7 +22,5 @@
 	<?php ET::minscript('toys') ?>
 	<?php ET::minscript() ?>
 	<script type="text/javascript">$.extend(true, app, <?php EF::raw(Response::get_javascript()); ?>);</script>
-
-
 </body>
 </html>

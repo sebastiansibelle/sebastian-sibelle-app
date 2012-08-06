@@ -1,22 +1,24 @@
-// app specific javascript
-$.extend(true, app, {
+// App specific javascript
+jQuery.extend(true, app, {
 
 	url: null,
 
+	// Create a POST Ajax request
 	post: function(url, data, callback) {
 		app.ajax('post', url, data, callback);
 	},
 
+	// Create a GET Ajax request
 	get: function(url, data, callback) {
 		app.ajax('get', url, data, callback);
 	},
 
+	// Create an Ajax request
 	ajax: function(type, url, data, callback) {
-		$.ajax({
-			// first do data
+		jQuery.ajax({
 			'type': type,
 			'url': url,
-			'data': $.extend({ajax: true, ajax_nonce: app.nonce}, data),
+			'data': jQuery.extend({ajax: true, ajax_nonce: app.nonce}, data),
 			'dataType': 'json',
 			'success': function(response_data, code, xhr) { 
 				app.nonce = response_data.nonce;
@@ -25,14 +27,8 @@ $.extend(true, app, {
 				{ 
 					callback.call(this, response_data, code, xhr); 
 				} 
-
-				if (ajax_handlers)
-				{
-					ajax_handlers.local.success(response_data, code, xhr);
-				}
 			}
 		});
-
 	},
 
 	init: function() {

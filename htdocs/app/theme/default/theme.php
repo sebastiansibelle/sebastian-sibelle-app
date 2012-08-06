@@ -1,6 +1,7 @@
-<?php 
-// maybe this should extend not theme, but an actuall theme specific class. later later...
-// the Class name should be {ThemeName}AppTheme
+<?php
+/**
+ * The Class name should be {ThemeName}AppTheme
+ */
 class DefaultAppTheme extends AppTheme 
 {
 	// allow themes to override strings.
