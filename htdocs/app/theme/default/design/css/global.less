@@ -6,7 +6,7 @@
 /* mad leet haxor the boxors for bootstrap
 /* ------------------------------------------------------------------ */
 .icon{background-image: none;}
-
+a:focus{outline: none;}
 
 
 /* z-index'd, together, for evar! 
@@ -14,3 +14,68 @@
 /* ------------------------------------------------------------------ */
 body{z-index: 500;}
 
+
+/* fonts */
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300);
+
+h1, h2, h3, h4{font-family: 'Roboto', sans-serif; font-weight: 300}
+a,a:hover{text-decoration: none;}
+
+
+
+.constrain{max-width: 1200px; margin: 0 auto; position: relative; padding: 0 20px;}
+
+/* layout */
+/*
+header,
+article{max-width: 800px; margin: 0 auto; padding: 20px;}
+*/
+
+
+header{background: #fefbf5 url(../images/bass/repeater.jpg) repeat-x bottom;}
+header h1{padding: 0; font-size: 72px; line-height: 72px; margin: 0; padding-bottom: 30px;}
+
+header .constrain{background: url(../images/bass/seb.jpg) no-repeat bottom right; padding: 100px 20px 100px;}
+
+header h1, header h2{color: #443b33; padding-right: 450px;}
+
+h2{font-size: 28px; margin:0; line-height: 40px;}
+
+header p {padding: 20px 0 0}
+header p a{display: block; float: left; padding: 10px 15px; font-size: 18px; background: #77695d; color: #fff; border-radius: 3px;}
+header p a:hover{background: #333; color: #fff;}
+
+
+aside{padding: 40px 0; position: absolute; top:0; right: 0; width: 25%;}
+/* aside ul li{float: left; width: 25%;} */
+aside ul li a{display: block; font-size: 18px; line-height: 24px; position: relative; padding: 25px 25px 25px 66px; margin: 10px; margin-bottom: 15px; color: #222; background: #f5f5f5; border-radius: 3px;}
+
+aside ul li a i{position: absolute; top:28px; left: 29px;}
+aside ul li a i.ss-linkedin{top:25px;}
+
+aside ul li a:hover{color: #000;background: #f9f4ec;}
+
+
+section{margin-right: 35%; padding: 30px 0;}
+section dd,
+section dt{font-size: 19px; line-height: 28px; color: #0d1937;}
+section dt a{font-weight: bold; color: #0d1937;}
+
+section dt{font-weight: 400;}
+section dd{font-weight: 300; padding-bottom: 30px; margin-left: 0; font-size: 17px; color: #777;}
+
+
+
+
+
+@media (max-width: 850px) {
+
+	
+	header .constrain{padding: 0 20px 50px}
+	header h1{font-size: 48px; line-height: 48px;}
+	header h2{font-size: 22px; line-height: 22px;}
+	
+	aside{position: relative; top: auto; right: auto; width: auto;}
+	section{margin: auto;}
+
+}

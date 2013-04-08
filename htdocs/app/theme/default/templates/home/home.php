@@ -1,36 +1,34 @@
 <?php $this->display( 'header' );  ?>
 
-<div class="container">
-	<!-- Main hero unit for a primary marketing message or call to action -->
-	<div class="hero-unit">
-		<h1>Hello, world!</h1>
-		<p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-		<p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
-	</div>
 
-	<!-- Example row of columns -->
-	<div class="row">
-		<div class="span4">
-			<h2>Heading</h2>
-			<p>Donec id elit non mi <a href="#" class="js_tooltip" rel="tooltip" data-original-title="some text in the tip">tooltip me</a> at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-			<p><a class="btn" href="#">View details &raquo;</a></p>
+	<header>
+		<div class="constrain">
+			<h1>Sebastian Sibelle</h1>
+			<h2>Engineer by nature, hipster by nurture, dismantling human problems and mending them with internet</h2>
+			<p><a href="mailto:sebastian.sibelle@gmail.com">sebastian.sibelle@gmail.com</a></p>
+			
 		</div>
-		<div class="span4">
-			<h2>Heading</h2>
-			<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-			<p><a class="btn" href="#">View details &raquo;</a></p>
-	</div>
-		<div class="span4">
-			<h2>Heading</h2>
-			<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-			<p><a class="btn" href="#">View details &raquo;</a></p>
-		</div>
-	</div>
+	</header>
 
-	<hr>
-	<footer>
-		<p>&copy; Company 2012</p>
-	</footer>
-</div> <!-- /container -->
+	<article>
 
+	<div class="constrain">
+		<aside>
+			<ul class="contact unstyled clearfix">
+				<li><a href="http://twitter.com/ssibelle"><i class="ss-social ss-twitter"></i> <span class="title">@ssibelle</span></a></li>
+				<li><a href="http://au.linkedin.com/in/sebastiansibelle"><i class="ss-social ss-linkedin"></i> <span class="title">LinkedIn</span></a></li>
+				<li><a href="https://github.com/sebastiansibelle"><i class="ss-social ss-github"></i> <span class="title">Github</span></a></li>
+			</ul>
+		</aside>
+		<section>
+			<dl class="projects">
+				<dt>Web Developer at <a href="http://squareweave.com.au">Squareweave</a><dt><dd>Technology design and implementation. Code, databases, APIs and optimisation. Documentation management and server management.</dd>
+				<dt>Founder at <strong>Capsule</strong></dt><dd>Three piece band of rocking out internet and doing projects together like pals.</dd>
+				<dt>Founder of <strong>Ichiraku Ramen</strong></dt><dd> Honest, humble ramen in the back streets of Fitzroy's cafe district.</dd>
+			</ul>		
+		</section>
+	</div>
+	
+</article>
+	
 <?php $this->display( 'footer' );  ?>
