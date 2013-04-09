@@ -23,7 +23,7 @@ class Bootstrap extends ShurikenBootstrap
 	/**
 	 * The application name. To fill in.
 	 */
-	const APP_NAME = 'ApplicationName';
+	const APP_NAME = 'Sebastian Sibelle';
 
 	/**
 	 * The release tag.
