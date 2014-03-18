@@ -34,6 +34,12 @@
 					<dt>Built <a href="http://goatremix.com">Goat Remix Dot Com</a> in an afternoon</dt><dd> Built a site to agreggate goat remix videos on youtube so you can have goats all day long!</dd>
 				</ul>
 			</section>
+			<section>
+				<dl class="projects">
+					<h2>Previous employment</h2>
+					<dt>Projectionist at <a href="http://rooftopcinema.com.au">Rooftop Cinema</a><dt><dd></dd>
+				</ul>
+			</section>
 		</div>
 	</article>
 
